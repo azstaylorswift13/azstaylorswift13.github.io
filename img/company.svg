@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px" y="0px" viewBox="0 0 300 30" style="enable-background:new 0 0 300 30;" xml:space="preserve">
+	<style type="text/css">
+		.st0 {
+			fill: #FFFFFF;
+			stroke: #FFF;
+			stroke-miterlimit: 20;
+		}
+	</style>
+	<switch>
+		<g i:extraneous="self">
+			<path id="XMLID_15_" class="st0" d="M19.8,3.2h20 M29.8,26.7v-24 M48.1,27.2v-25V27.2z M58.8,14.7h1 M69,27.2v-25 M99.8,3.2h-20
+			 M99.8,14.7h-20 M99.8,26.2h-20 M132.3,2.7h20 M142.8,14.8h-1 M264.7,25.8h4 M132.3,26.3h20 M165.3,27.3v-25 M256,3.1v23.7
+			 M275.5,2.5v23.7 M174.4,15h1 M185.3,27.3v-25 M204,27.5v-25 M217.2,3.5l6.5,24.1 M236.6,27.8l-6.5-24.1 M236.6,27.8l6.5-24.1
+			 M223.7,27.8l6.5-24.1"/>
+		</g>
+	</switch>
+</svg>
