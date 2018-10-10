@@ -8,127 +8,64 @@
     <title>The Zhiwu Studio</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" as="font" crossorigin="crossorigin" type="font/ttf" href="./fonts/Lato-Light.ttf">
 </head>
 
 <body>
-    <!-- <div class="swiper-slide slide-menu"> -->
-    <div class="swiper-container">
-        <div class="home" style="display: none;">
-            <header>
-                <div class="logo">
-                    <svg width="25px" height="25px" viewBox="0 0 25 25">
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
-                                id="smallLogo" stroke="#131116"></path>
-                        </g>
-                    </svg>
-                </div>
-                <div class="menu-button" onclick="$('.home').slideToggle();">
-                    <svg width="25px" height="25px" viewBox="0 0 25 25">
-                        <g stroke-width="1" fill-rule="evenodd">
-                            <polygon points="1 1.707 23.293 24 24 23.293 1.707 1"></polygon>
-                            <polygon points="1 23.293 1.707 24 24 1.707 23.293 1"></polygon>
-                        </g>
-                    </svg>
-                </div>
-            </header>
-            <div class="menu">
-                <nav>
-                    <nav-link path="/" active="active">Home</nav-link>
-                    <nav-link path="/work">Work</nav-link>
-                    <nav-link path="/about">Studio</nav-link>
-                    <span class="active-item-pointer"></span>
-                </nav>
+    <div class="home-work-studio" style="display: none;">
+        <header>
+            <div class="logo">
+                <svg width="25px" height="25px" viewBox="0 0 25 25">
+                    <g fill="none" fill-rule="evenodd">
+                        <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
+                            id="smallLogo" stroke="#131116"></path>
+                    </g>
+                </svg>
             </div>
+            <div class="menu-button" onclick="$('.home-work-studio').slideToggle();">
+                <svg width="25px" height="25px" viewBox="0 0 25 25">
+                    <g stroke-width="1" fill-rule="evenodd">
+                        <polygon points="1 1.707 23.293 24 24 23.293 1.707 1"></polygon>
+                        <polygon points="1 23.293 1.707 24 24 1.707 23.293 1"></polygon>
+                    </g>
+                </svg>
+            </div>
+        </header>
+        <div class="menu">
+            <nav>
+                <nav-link path="/" active="active">Home</nav-link>
+                <nav-link path="/work">Work</nav-link>
+                <nav-link path="/about">Studio</nav-link>
+                <span class="active-item-pointer"></span>
+            </nav>
         </div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide-home">
-                <header>
-                    <div class="logo">
-                        <svg width="25px" height="25px" viewBox="0 0 25 25">
-                            <g fill="none" fill-rule="evenodd">
-                                <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
-                                    id="smallLogo" stroke="#fff"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="menu-button" onclick="$('.home').slideToggle();">
-                        <svg width="25px" height="25px" viewBox="0 0 25 25">
-                            <g stroke-width="1" fill-rule="evenodd" stroke="#fff">
-                                <polygon points="0 7 24 7 24 6 0 6"></polygon>
-                                <polygon points="0 19 24 19 24 18 0 18"></polygon>
-                            </g>
-                        </svg>
-                    </div>
-                    <!-- </header> -->
-                    <div class="heading">
-                        <div class="company-name">
-                            <embed src="./img/company.svg" width="300" height="60" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"
-                            />
-                            <!-- <svg viewBox="0 0 520 52" version="1.1" width="298.797px" height="29.875px">
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> -->
-                                    <!-- <path d="M39.6,0.4008 L1.2,0.4008 C0.537,0.4008 0,0.9388 0,1.6008 C0,2.2638 0.537,2.8008 1.2,2.8008 L19.2,2.8008 L19.2,49.6008 C19.2,50.2638 19.737,50.8008 20.4,50.8008 C21.063,50.8008 21.6,50.2638 21.6,49.6008 L21.6,2.8008 L39.6,2.8008 C40.263,2.8008 40.8,2.2638 40.8,1.6008 C40.8,0.9388 40.263,0.4008 39.6,0.4008 M164.4,48.4008 L132.8,48.4008 C132.137,48.4008 131.6,48.9378 131.6,49.6008 C131.6,50.2638 132.137,50.8008 132.8,50.8008 L164.4,50.8008 C165.063,50.8008 165.6,50.2638 165.6,49.6008 C165.6,48.9378 165.063,48.4008 164.4,48.4008 M132.8,26.8008 L164,26.8008 C164.662,26.8008 165.2,26.2638 165.2,25.6008 C165.2,24.9388 164.662,24.4008 164,24.4008 L132.8,24.4008 C132.137,24.4008 131.6,24.9388 131.6,25.6008 C131.6,26.2638 132.137,26.8008 132.8,26.8008 M164.4,0.4008 L132.8,0.4008 C132.137,0.4008 131.6,0.9388 131.6,1.6008 C131.6,2.2638 132.137,2.8008 132.8,2.8008 L164.4,2.8008 C165.063,2.8008 165.6,2.2638 165.6,1.6008 C165.6,0.9388 165.063,0.4008 164.4,0.4008 M80.8,23.2008 C79.475,23.2008 78.4,24.2758 78.4,25.6008 C78.4,26.9268 79.475,28.0008 80.8,28.0008 C82.125,28.0008 83.2,26.9268 83.2,25.6008 C83.2,24.2758 82.125,23.2008 80.8,23.2008 M98.4,0.4008 C97.737,0.4008 97.2,0.9388 97.2,1.6008 L97.2,49.6008 C97.2,50.2638 97.737,50.8008 98.4,50.8008 C99.062,50.8008 99.6,50.2638 99.6,49.6008 L99.6,1.6008 C99.6,0.9388 99.062,0.4008 98.4,0.4008 M62.4,0.4008 C61.737,0.4008 61.2,0.9388 61.2,1.6008 L61.2,49.6008 C61.2,50.2638 61.737,50.8008 62.4,50.8008 C63.063,50.8008 63.6,50.2638 63.6,49.6008 L63.6,1.6008 C63.6,0.9388 63.063,0.4008 62.4,0.4008 M334.4,48.8008 L311.2,48.8008 L311.2,2.0008 C311.2,1.3378 310.662,0.8008 310,0.8008 C309.337,0.8008 308.8,1.3378 308.8,2.0008 L308.8,50.0018 C308.8,50.6638 309.337,51.2008 310,51.2008 L334.4,51.2008 C335.062,51.2008 335.6,50.6638 335.6,50.0018 C335.6,49.3388 335.062,48.8008 334.4,48.8008 M269.667,7.9348 C269.517,7.9988 269.385,8.0918 269.276,8.2058 C268.93,8.5558 258.066,19.4348 252.336,25.1738 C251.868,25.6428 251.868,26.4028 252.336,26.8718 C252.804,27.3408 253.563,27.3408 254.032,26.8718 L270.118,10.7598 C278.158,19.6998 277.883,33.5268 269.292,42.1328 C260.417,51.0228 245.976,51.0228 237.101,42.1328 C228.227,33.2428 228.227,18.7768 237.101,9.8868 C241.119,5.8638 246.454,3.5008 252.123,3.2338 C252.785,3.2038 253.296,2.6408 253.265,1.9788 C253.234,1.3158 252.672,0.8008 252.011,0.8358 C245.744,1.1298 239.847,3.7408 235.406,8.1898 C225.596,18.0158 225.596,34.0048 235.406,43.8308 C240.311,48.7438 246.754,51.2008 253.197,51.2008 C259.64,51.2008 266.082,48.7438 270.987,43.8308 C280.797,34.0048 280.797,18.0158 270.987,8.1898 C270.641,7.8418 270.118,7.7418 269.667,7.9348 M387.035,0.1518 C386.463,-0.1772 385.701,0.0698 385.334,0.7038 L368.002,28.3408 L350.667,0.6978 C350.3,0.0638 349.538,-0.1832 348.967,0.1468 C348.393,0.4758 348.227,1.2568 348.595,1.8918 L366.534,30.4988 C366.608,30.6258 366.699,30.7358 366.8,30.8298 L366.8,49.6008 C366.8,50.2638 367.337,50.8008 368,50.8008 C368.662,50.8008 369.2,50.2638 369.2,49.6008 L369.2,30.8368 C369.301,30.7418 369.392,30.6318 369.467,30.5048 L387.406,1.8978 C387.773,1.2628 387.607,0.4818 387.035,0.1518 M433.898,0.4008 L415.523,0.4008 C414.857,0.4008 414.317,0.9388 414.317,1.6008 L414.317,49.6008 C414.317,50.2628 414.857,50.8008 415.523,50.8008 C416.189,50.8008 416.729,50.2628 416.729,49.6008 L416.729,2.8008 L433.898,2.8008 C444.757,2.8008 451.502,8.3008 451.502,17.1528 C451.502,27.4158 442.188,32.0088 432.958,32.0088 L429.735,32.0088 C429.069,32.0088 428.53,32.5468 428.53,33.2088 C428.53,33.8718 429.069,34.4088 429.735,34.4088 L432.958,34.4088 C438.621,34.4088 443.791,32.8828 447.516,30.1108 C451.702,26.9978 453.914,22.5168 453.914,17.1528 C453.914,6.9768 446.058,0.4008 433.898,0.4008 M500.399,23.2008 C499.074,23.2008 498,24.2758 498,25.6008 C498,26.9268 499.074,28.0008 500.399,28.0008 C501.725,28.0008 502.8,26.9268 502.8,25.6008 C502.8,24.2758 501.725,23.2008 500.399,23.2008 M518.8,0.4008 C518.138,0.4008 517.599,0.9388 517.599,1.6008 L517.599,49.6008 C517.599,50.2638 518.138,50.8008 518.8,50.8008 C519.463,50.8008 520,50.2638 520,49.6008 L520,1.6008 C520,0.9388 519.463,0.4008 518.8,0.4008 M482.8,0.4008 C482.137,0.4008 481.6,0.9388 481.6,1.6008 L481.6,49.6008 C481.6,50.2638 482.137,50.8008 482.8,50.8008 C483.463,50.8008 484,50.2638 484,49.6008 L484,1.6008 C484,0.9388 483.463,0.4008 482.8,0.4008"
-                                    fill="#fff">
-                                </path> 
-                            </svg> -->
-                        </div>
-                        <h2>Designing high quality products</h2>
-                    </div>
-            </div>
-            <div class="swiper-slide">
-                <header>
-                    <div class="logo">
-                        <svg width="25px" height="25px" viewBox="0 0 25 25">
-                            <g fill="none" fill-rule="evenodd">
-                                <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
-                                    id="smallLogo" stroke="#fff"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <!-- <div class="menu-button"> -->
-                    <div class="menu-button" onclick="$('.home').slideToggle();">
-                        <svg width="25px" height="25px" viewBox="0 0 25 25">
-                            <g stroke-width="1" fill-rule="evenodd" stroke="#fff">
-                                <polygon points="0 7 24 7 24 6 0 6"></polygon>
-                                <polygon points="0 19 24 19 24 18 0 18"></polygon>
-                            </g>
-                        </svg>
-                    </div>
-                </header>
-                <div class="slide-1">Slide 1</div>
-            </div>
-            <div class="swiper-slide">
-                <header>
-                    <div class="logo">
-                        <svg width="25px" height="25px" viewBox="0 0 25 25">
-                            <g fill="none" fill-rule="evenodd">
-                                <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
-                                    id="smallLogo" stroke="#fff"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <!-- <div class="menu-button"> -->
-                    <div class="menu-button" onclick="$('.home').slideToggle();">
-                        <svg width="25px" height="25px" viewBox="0 0 25 25">
-                            <g stroke-width="1" fill-rule="evenodd" stroke="#fff">
-                                <polygon points="0 7 24 7 24 6 0 6"></polygon>
-                                <polygon points="0 19 24 19 24 18 0 18"></polygon>
-                            </g>
-                        </svg>
-                    </div>
-                </header>
-                <div class="slide-2">
-                    Slide 2
-                </div>
-            </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
     </div>
-    <script src="./js/swiper.min.js"></script>
-    <script src="./js/init.js"></script>
+    <div id="home">
+        <header>
+            <div class="logo">
+                <svg width="25px" height="25px" viewBox="0 0 25 25">
+                    <g fill="none" fill-rule="evenodd">
+                        <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
+                            id="smallLogo" stroke="#fff"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="menu-button" onclick="$('.home-work-studio').slideToggle();">
+                <svg width="25px" height="25px" viewBox="0 0 25 25">
+                    <g stroke-width="1" fill-rule="evenodd" stroke="#fff">
+                        <polygon points="0 7 24 7 24 6 0 6"></polygon>
+                        <polygon points="0 19 24 19 24 18 0 18"></polygon>
+                    </g>
+                </svg>
+            </div>
+            <div class="heading">
+                <div class="company-name">
+                    <embed src="./img/company.svg" width="300" height="60" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
+                </div>
+                <h2>Designning high quality products</h2>
+            </div>
+    </div>
     <script src="./js/jquery.min.js"></script>
 </body>
 
