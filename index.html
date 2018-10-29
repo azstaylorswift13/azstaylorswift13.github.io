@@ -16,12 +16,14 @@
     <div class="home-work-studio" style="display: none;">
         <header>
             <div class="logo">
-                <svg width="25px" height="25px" viewBox="0 0 25 25">
-                    <g fill="none" fill-rule="evenodd">
-                        <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
-                            id="smallLogo" stroke="#131116"></path>
-                    </g>
-                </svg>
+                <a href="/">
+                    <svg width="25px" height="25px" viewBox="0 0 25 25">
+                        <g fill="none" fill-rule="evenodd">
+                            <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
+                                id="smallLogo" stroke="#131116"></path>
+                        </g>
+                    </svg>
+                </a>
             </div>
             <div class="menu-button" onclick="$('.home-work-studio').slideToggle();">
                 <svg width="25px" height="25px" viewBox="0 0 25 25">
@@ -41,32 +43,169 @@
             </nav>
         </div>
     </div>
+
     <div id="home">
-        <header>
-            <div class="logo">
-                <svg width="25px" height="25px" viewBox="0 0 25 25">
-                    <g fill="none" fill-rule="evenodd">
-                        <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
-                            id="smallLogo" stroke="#fff"></path>
-                    </g>
-                </svg>
-            </div>
-            <div class="menu-button" onclick="$('.home-work-studio').slideToggle();">
-                <svg width="25px" height="25px" viewBox="0 0 25 25">
-                    <g stroke-width="1" fill-rule="evenodd" stroke="#fff">
-                        <polygon points="0 7 24 7 24 6 0 6"></polygon>
-                        <polygon points="0 19 24 19 24 18 0 18"></polygon>
-                    </g>
-                </svg>
-            </div>
+        <div id='particles-js'></div>
+        <div class="wrap">
+            <header>
+                <div class="logo">
+                    <a href="/">
+                        <svg width="25px" height="25px" viewBox="0 0 25 25">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
+                                    id="smallLogo" stroke="#fff"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="menu-button" onclick="$('.home-work-studio').slideToggle();">
+                    <svg width="25px" height="25px" viewBox="0 0 25 25">
+                        <g stroke-width="1" fill-rule="evenodd" stroke="#fff">
+                            <polygon points="0 7 24 7 24 6 0 6"></polygon>
+                            <polygon points="0 19 24 19 24 18 0 18"></polygon>
+                        </g>
+                    </svg>
+                </div>
+            </header>
+
             <div class="heading">
                 <div class="company-name">
                     <embed src="./img/company.svg" width="300" height="60" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
                 </div>
                 <h2>Designning high quality products</h2>
             </div>
+        </div>
     </div>
-    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="./js/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            function styleDefault() {
+                $('#particles-js').css("background-color", "rgb(0,0,0)");
+                particlesJS("particles-js", {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#ffffff"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            },
+                            "image": {
+                                "src": "img/github.svg",
+                                "width": 100,
+                                "height": 100
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": false,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#ffffff",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 6,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "grab"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 400,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "bubble": {
+                                "distance": 400,
+                                "size": 40,
+                                "duration": 2,
+                                "opacity": 8,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            };
+            styleDefault();
+        });
+
+        // Steve Jobs Quotes
+        console.log("\n \t Your work is going to fill a large part of your life,\n and the only way to be " +
+            "truly satisfied is to do what you \n believe is great work. And the only way to do great" +
+            " work \n is to love what you do. If you haven't found it yet, keep \n looking. Don't settle." +
+            " As with all matters of the heart, \n you'll know when you find it.\n\n\n \t\t\t\t\t\t\t\t\t\t\t " +
+            "Steve Jobs \n\n");
+    </script> -->
 </body>
 
 </html>

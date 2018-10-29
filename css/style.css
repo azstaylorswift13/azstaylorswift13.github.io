@@ -2,6 +2,12 @@ html,
 body {
     height: 100%;
 }
+
+*{
+    margin:0px; 
+    padding:0px;
+}
+
 @font-face {
     font-family: 'Lato Light';
     src: url('../fonts/Lato-Light.ttf');
@@ -13,17 +19,15 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
+body iframe { display: none; }
 #home {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    background-image: url(../img/bg4.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%; 
+    background-color: #000;
 }
 .home-work-studio{
     width: 100%;
@@ -35,9 +39,10 @@ body {
     position: absolute;
 }
 header {
+    position: absolute;
     width: 100%;
     height: 25px;
-    padding-top: 44.820px;
+    top: 44.820px;
 }
 .logo {
     float: left;
@@ -164,4 +169,10 @@ div.menu nav>nav-link[path='/about']:hover~span.active-item-pointer {
         top: 300px !important;
         bottom: auto;
     }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
