@@ -203,7 +203,7 @@ div.menu nav>nav-link[path='/about']:hover~span.active-item-pointer {
 #particles-js {
     position: absolute;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
 }
 
 #status {
