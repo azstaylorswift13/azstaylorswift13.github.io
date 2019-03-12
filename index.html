@@ -14,26 +14,6 @@
 
 <body>
     <div class="home-work-studio" style="display: none;">
-        <header>
-            <div class="logo">
-                <a href="/">
-                    <svg width="25px" height="25px" viewBox="0 0 25 25">
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
-                                id="smallLogo" stroke="#131116"></path>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-            <div class="menu-button" onclick="$('.home-work-studio').slideToggle();">
-                <svg width="25px" height="25px" viewBox="0 0 25 25">
-                    <g stroke-width="1" fill-rule="evenodd">
-                        <polygon points="1 1.707 23.293 24 24 23.293 1.707 1"></polygon>
-                        <polygon points="1 23.293 1.707 24 24 1.707 23.293 1"></polygon>
-                    </g>
-                </svg>
-            </div>
-        </header>
         <div class="menu">
             <nav>
                 <nav-link path="/" active="active">Home</nav-link>
@@ -43,44 +23,55 @@
             </nav>
         </div>
     </div>
-
     <div id="home">
+        <header>
+            <div class="logo">
+                <a href="/">
+                    <svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path id="smallLogo" />
+                    </svg>
+                </a>
+            </div>
+            <div class="menu-button">
+                <label>
+                    <input type="checkbox" id="status" onclick=menu_click() />
+                    <svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path class="up-line" />
+                        <path class="down-line" />
+                    </svg>
+                </label>
+            </div>
+        </header>
         <div id='particles-js'></div>
         <div class="wrap">
-            <header>
-                <div class="logo">
-                    <a href="/">
-                        <svg width="25px" height="25px" viewBox="0 0 25 25">
-                            <g fill="none" fill-rule="evenodd">
-                                <path d="M11.2498,1.1196 C8.6008,1.2446 6.1078,2.3466 4.2308,4.2246 C0.0838,8.3726 0.0838,15.1226 4.2308,19.2706 C8.3778,23.4186 15.1268,23.4186 19.2728,19.2706 C23.2878,15.2556 23.4178,8.8026 19.6598,4.6316 L12.1418,12.1496"
-                                    id="smallLogo" stroke="#fff"></path>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="menu-button" onclick="$('.home-work-studio').slideToggle();">
-                    <svg width="25px" height="25px" viewBox="0 0 25 25">
-                        <g stroke-width="1" fill-rule="evenodd" stroke="#fff">
-                            <polygon points="0 7 24 7 24 6 0 6"></polygon>
-                            <polygon points="0 19 24 19 24 18 0 18"></polygon>
-                        </g>
-                    </svg>
-                </div>
-            </header>
-
             <div class="heading">
                 <div class="company-name">
                     <embed src="./img/company.svg" width="300" height="60" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />
                 </div>
-                <h2>Designning high quality products</h2>
+                <h2>Focusing On AI Technology</h2>
             </div>
         </div>
     </div>
-    <!-- <script src="./js/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+        function menu_click() {
+            $('.home-work-studio').slideToggle();
+            if (!$('.logo').is('.logo-svg-path')) {
+                setTimeout(() => {
+                    $('.logo').addClass('logo-svg-path')
+                }, 50)
+            } else {
+                setTimeout(() => {
+                    $('.logo').removeClass('logo-svg-path')
+                }, 360)
+            }
+        }
+    </script>
 </body>
 
 </html>
